@@ -1,0 +1,13 @@
+# Unpinned on purpose: the study ran on Kaggle (Python 3.13). Pin to your own
+# environment with `pip freeze` once you have a working run.
+numpy
+scipy
+pandas
+scikit-learn
+statsmodels
+torch
+matplotlib
+wfdb
+tqdm
+ipython
+jupyterlab
