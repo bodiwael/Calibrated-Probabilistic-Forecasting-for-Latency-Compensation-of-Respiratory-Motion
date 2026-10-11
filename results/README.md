@@ -1,21 +1,8 @@
 # Results
 
-Exported tables and figures from the three full-mode runs (seed 42), one sub-folder per cohort:
-
-```
-results/
-├── pics/      tables/  figures/
-├── bidmc/     tables/  figures/
-└── fantasia/  tables/  figures/
-```
-
-Copy them in with:
-
 ```bash
 python scripts/collect_results.py --run-dir <path-to-run-folder> --cohort <pics|bidmc|fantasia>
 ```
-
-`results/bidmc/tables/forecast_metrics.csv` is already included (it is the file used to fill the BIDMC TCN (prob.) cell of paper Table 2).
 
 ## Tables (CSV)
 
