@@ -1,0 +1,5 @@
+group,role,test_group,n_subjects
+elderly,test,shift_elderly_frozen,20
+young,test,in_dist_young_test,4
+young,train,,12
+young,val,,4

@@ -1,0 +1,47 @@
+{
+  "n_records_in_csv": 40,
+  "missing_vs_expected_40": [],
+  "unexpected": [],
+  "cohort_counts": {
+    "young": 20,
+    "elderly": 20
+  },
+  "fs_counts": {
+    "250.0": 39,
+    "333.0": 1
+  },
+  "fs_not_250": [
+    {
+      "record": "f2y02",
+      "fs": 333.0,
+      "duration_s": 7034.618618618619,
+      "sig_len": 2342528
+    }
+  ],
+  "units": "UNVERIFIED (third-party CSV carries no header/units)",
+  "age_metadata": "NOT available in CSV; cohort from record-ID convention only (y=young 21-34, o=elderly 68-85 per PhysioNet documentation)",
+  "official_headers_checked": 40,
+  "mismatch_fs_or_len": [],
+  "official_resp_channel_and_units": {
+    "f1o01": {
+      "RESP": "mV",
+      "ECG": "mV"
+    },
+    "f1o02": {
+      "RESP": "mV",
+      "ECG": "mV"
+    },
+    "f1o03": {
+      "RESP": "mV",
+      "ECG": "mV"
+    }
+  },
+  "sample_correlation_first_record": 0.9999999999998567,
+  "status": "VERIFIED against official headers/samples (see mismatches)",
+  "anomaly_rate_check_bpm": {
+    "f2y02": {
+      "if_250Hz": 12.0,
+      "if_csv_fs": 15.984
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "fig02_dataset_statistics": "Fantasia: record-level statistics, example spectra and autocorrelation (descriptive EDA, from analysed records).",
+  "fig03_raw_vs_filtered": "Fantasia: raw versus causally filtered respiratory signal; dashed line is an offline-only zero-phase reference.",
+  "fig_training_curves_fold0": "Training/validation loss curves (fold 0).",
+  "fig07_calibration_coverage": "Empirical versus nominal central-interval coverage per forecast horizon (pooled test windows; subject-level CIs are in the tables).",
+  "fig08_uncertainty_vs_error": "Predicted uncertainty versus absolute forecast error (ensemble). Subject-level Spearman correlations test whether \u03c3 tracks error.",
+  "fig14_distribution_shift": "Ensemble forecast error, mean uncertainty and 95% coverage per evaluation group (subject-level bootstrap 95% CI).",
+  "fig_target_motion": "Normalised respiratory surrogate and the resulting SIMULATED target trajectory for three assumed amplitudes (simulation assumption, not a measurement).",
+  "fig_sim_validation_sinusoid": "SIMULATION validation on a sinusoidal target: robot position and tracking error for reactive control at three observation delays.",
+  "fig10_11_error_failure_vs_latency": "SIMULATED tracking RMSE (left) and failure rate (right) versus observation delay, subject-level mean with 95% bootstrap CI.",
+  "fig09_tracking_trajectories": "SIMULATED target, robot position, commands and tracking error at D=300 ms (A=5.0 mm); dotted lines mark the failure threshold.",
+  "fig12_roc_failure": "ROC curves for predicting future tracking failure (predictive controller, D=300 ms).",
+  "fig13_pr_failure": "Precision\u2013recall curves for predicting future tracking failure (predictive controller, D=300 ms).",
+  "fig01_pipeline": "Overall research pipeline (all robot results are simulations).",
+  "fig04_eda_power_spectra": "Welch power spectra at native sampling rate for representative records; shaded = analysis passband (descriptive EDA).",
+  "fig05_forecasts_uncertainty": "Ensemble forecasts with 95% Gaussian intervals at each horizon (f2o01, normalised units).",
+  "fig06_error_vs_horizon": "Forecast error versus horizon; markers = subject-level mean, bars = 95% bootstrap CI.",
+  "fig15_ablation": "Ablations: controller ladder (left) and forecaster family under predictive control (right); SIMULATED tracking."
+}

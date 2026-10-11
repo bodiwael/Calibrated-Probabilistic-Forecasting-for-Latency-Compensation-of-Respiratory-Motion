@@ -1,0 +1,15 @@
+{
+  "source": "kaggle:lana0038/fantasia-dataset-with-ecg-and-respiration-signals",
+  "csv": "/kaggle/input/datasets/lana0038/fantasia-dataset-with-ecg-and-respiration-signals/fantasia_ecg_respiration_signals.csv",
+  "size_bytes": 3949160039,
+  "sha256": "01a2491d009823af44b81e41251e67640d91e7602f40d874570f54e7bb3fae49",
+  "third_party_processed": true,
+  "official_physionet_files": false,
+  "synthetic_data_used": false,
+  "columns_used": [
+    "RESP",
+    "Participant",
+    "Sample",
+    "Sampling_Rate"
+  ]
+}

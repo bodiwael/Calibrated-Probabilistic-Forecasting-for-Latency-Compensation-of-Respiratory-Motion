@@ -1,0 +1,32 @@
+[20:04:36] Output directory: /kaggle/working/results/fantasia_v2/full_20261010_200436
+[20:04:36] Using CSV: /kaggle/input/datasets/lana0038/fantasia-dataset-with-ecg-and-respiration-signals/fantasia_ecg_respiration_signals.csv (3.68 GiB)
+[20:05:06] converted 71,796,336 rows with pyarrow: 40 participants
+[20:05:06] conversion took 29s
+[20:05:06] Selected 40 participants for this run (MODE=full); excluded-by-configuration: 0
+[20:05:17] STATUS dataset_inventory: RUN
+[20:05:24] PROVENANCE: VERIFIED against official headers/samples (see mismatches)
+[20:05:24] STATUS provenance_verification: RUN
+[20:05:29] Records analysed: 40; subjects: 40
+[20:05:34] STATUS unit_tests_preprocessing: RUN
+[20:05:37] Window metadata sample (every 50th window; horizons are the fixed list H_MS) saved.
+[20:05:38] === fitting fold 0 (12 train / 4 val / 24 test subjects)
+[20:19:14] fold 0 info: {'ridge_alpha': 0.001, 'kalman_q_r': (100, 0.001), 'latency_ms_per_window': {'lstm_prob': 0.32233238220214844, 'tcn_prob': 1.838979721069336}}
+[20:19:16] STATUS forecasting_models: RUN
+[20:19:38] STATUS forecast_evaluation: RUN
+[20:19:39] NOTE: young in-distribution test group is small; young-vs-elderly differences are exploratory distribution-shift descriptions, not causal or confirmatory.
+[20:19:40] Sensitivity table without sampling-rate-anomaly records ['f2y02'] saved (EXPLORATORY; if such a record is in train/val it was still used for training).
+[20:19:40] STATUS validation_model_selection: RUN
+[20:19:47] STATUS uncertainty_calibration: RUN
+[20:19:52] STATUS distribution_shift: RUN
+[20:19:54] STATUS synthetic_target: RUN
+[20:19:55] STATUS robot_sinusoid_validation: RUN
+[20:20:10] STATUS controllers_primary: RUN
+[20:20:21] STATUS tracking_metrics: RUN
+[20:24:31] STATUS failure_prediction: RUN
+[20:25:15] STATUS failure_curves: RUN
+[20:25:22] STATUS statistics: RUN
+[20:26:35] STATUS ablation: RUN
+[20:26:58] STATUS sensitivity_actuator_tau: RUN
+[20:27:11] STATUS sensitivity_measurement_noise: RUN
+[20:27:17] STATUS figures_tables: RUN
+[20:27:18] STATUS final_report: RUN
