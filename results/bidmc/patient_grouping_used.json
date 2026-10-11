@@ -1,0 +1,21 @@
+{
+  "mode_requested": "documented_id",
+  "mode_used": "documented_id",
+  "n_records_analysed": 50,
+  "n_with_documented_id": 50,
+  "n_patient_groups": 44,
+  "grouped_records": {
+    "ID:s03386": [
+      "bidmc06",
+      "bidmc07",
+      "bidmc08",
+      "bidmc09"
+    ],
+    "ID:s11342": [
+      "bidmc20",
+      "bidmc21",
+      "bidmc22",
+      "bidmc23"
+    ]
+  }
+}
