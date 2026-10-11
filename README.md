@@ -2,7 +2,9 @@
 
 **A closed-loop simulation study on three public cohorts (PICS, BIDMC, Fantasia).**
 
-> *Anonymous repository for double-blind review. Author names, affiliations and the final repository URL will be added after the review.*
+> **Paper (Overleaf, read-only):** <https://www.overleaf.com/read/cgpztggwkvyk#5c3a1e>
+>
+> **Supported by IEEE EMBS E-JUST SBC.**
 
 Latency between sensing and actuation makes a robot that follows a breathing target act on outdated information. This repository studies **probabilistic respiratory forecasting as a latency-compensation layer** and asks what its predictive uncertainty is actually good for.
 
@@ -29,17 +31,6 @@ We train probabilistic LSTM and TCN forecasters and a deep ensemble, calibrate t
 
 *Subject-mean RMSE for four controllers. Values come from the notebooks' printed ablation summaries. The Kalman controller's 400–500 ms Fantasia points were not captured in the printed output and are omitted here. Regenerate this figure from `tracking_summary_by_controller_delay.csv` once the results are exported.*
 
-### Forecast error at 300 ms
-
-![MAE at 300 ms](docs/img/mae_300ms_by_model.png)
-
-*Subject-mean MAE in normalised units (paper Table 2).*
-
-### Calibration at 300 ms
-
-![Coverage at 300 ms](docs/img/coverage_300ms.png)
-
-*95% interval coverage (paper Table 3). The dashed line is the nominal level. Conformal intervals produce no predictive density, so NLL is not defined for them and is not reported for that row.*
 
 ---
 
@@ -84,7 +75,7 @@ We train probabilistic LSTM and TCN forecasters and a deep ensemble, calibrate t
 ├── scripts/
 │   └── collect_results.py        <- copies tables/figures out of a notebook run folder
 │
-└── docs/img/                     <- summary charts shown in this README
+└── docs/img/                     <- summary chart shown in this README
 ```
 
 ---
@@ -185,11 +176,15 @@ This copies every CSV into `results/<cohort>/tables/` and every figure into `res
 
 ---
 
+## Acknowledgment
+
+This work is supported by **IEEE EMBS E-JUST SBC**.
+
 ## Citation
 
 ```
-Anonymous Authors. "Calibrated Probabilistic Forecasting for Latency Compensation of
-Respiratory Motion: A Closed-Loop Simulation Study on Three Public Cohorts." Under review.
+Authors. "Calibrated Probabilistic Forecasting for Latency Compensation of
+Respiratory Motion: A Closed-Loop Simulation Study on Three Public Cohorts." Under review. Paper: https://www.overleaf.com/read/cgpztggwkvyk#5c3a1e
 ```
 
 The BibTeX entry will be added after review.
