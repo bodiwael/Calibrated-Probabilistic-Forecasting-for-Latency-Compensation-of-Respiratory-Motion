@@ -1,0 +1,54 @@
+[18:16:30] Output directory: /kaggle/working/results/bidmc/full_20261010_181630
+[18:16:30] No .hea files under configured DATA_DIR=/kaggle/input/datasets/ieeeai/bidmc-ppg/bidmc-ppg-and-respiration-dataset-1.0.0; searching all of /kaggle/input ...
+[18:16:32] Record list taken from the official RECORDS file (53 entries, 0 non-waveform/numerics entries ignored).
+[18:16:32] Database root: /kaggle/input/datasets/anhtua/bidmc-ppg-dataset/bidmc-ppg-and-respiration-dataset-1.0.0; records discovered: 53; headers present: 53
+[18:16:32] Documentation file README: present
+[18:16:32] Documentation file README.md: not in this Kaggle upload
+[18:16:32] Documentation file README.txt: not in this Kaggle upload
+[18:16:32] Documentation file SHA256SUMS.txt: present
+[18:16:32] Documentation file LICENSE.txt: not in this Kaggle upload
+[18:16:32] Patient identity audit: Fix files found 53/53; documented subject IDs parsed 53; distinct IDs 46; IDs shared by >1 record: {'s03386': ['bidmc06', 'bidmc07', 'bidmc08', 'bidmc09'], 's11342': ['bidmc20', 'bidmc21', 'bidmc22', 'bidmc23'], 's25323': ['bidmc38', 'bidmc39']}
+[18:16:32] STATUS patient_identity: RUN
+[18:16:33] Records with verified respiratory channel: 53/53
+[18:16:33] Selected 53 records for this run (MODE=full); excluded-by-configuration: 0
+[18:16:33] All signal files present for 53 selected records (read directly from /kaggle/input/datasets/anhtua/bidmc-ppg-dataset/bidmc-ppg-and-respiration-dataset-1.0.0).
+[18:16:33] STATUS dataset_inventory: RUN
+[18:16:36] Records analysed: 50; subjects: 50
+[18:16:42] STATUS unit_tests_preprocessing: RUN
+[18:16:42] Subject identity (mode requested=documented_id, used=documented_id): 50 records/subjects analysed, 50 with a documented subject ID, 44 patient groups; groups with >1 record kept together: {'ID:s03386': ['bidmc06', 'bidmc07', 'bidmc08', 'bidmc09'], 'ID:s11342': ['bidmc20', 'bidmc21', 'bidmc22', 'bidmc23']}
+[18:16:42] NOTE: age missing for 1 subject(s) -> the age-subgroup shift analysis is NOT RUN (no imputation)
+[18:16:43] Window metadata sample (every 50th window; horizons are the fixed list H_MS) saved.
+[18:16:44] fold checkpoints: /kaggle/temp/ckpt/full_20261010_181630
+[18:16:44] === fitting fold 0 (30 train / 10 val / 10 test subjects)
+[18:24:01] fold 0 done in 7.3 min (checkpoint saved)
+[18:24:01] fold 0 info: {'ridge_alpha': 10, 'kalman_q_r': (100, 0.001), 'latency_ms_per_window': {'lstm_prob': 0.32227516174316406, 'tcn_prob': 1.8504810333251953}}
+[18:24:01] === fitting fold 1 (30 train / 10 val / 10 test subjects)
+[18:33:13] fold 1 done in 9.2 min (checkpoint saved)
+[18:33:13] fold 1 info: {'ridge_alpha': 10, 'kalman_q_r': (100, 0.001), 'latency_ms_per_window': {'lstm_prob': 0.3183436393737793, 'tcn_prob': 2.0670318603515625}}
+[18:33:13] === fitting fold 2 (30 train / 10 val / 10 test subjects)
+[18:41:01] fold 2 done in 7.8 min (checkpoint saved)
+[18:41:01] fold 2 info: {'ridge_alpha': 10, 'kalman_q_r': (100, 0.001), 'latency_ms_per_window': {'lstm_prob': 0.34560441970825195, 'tcn_prob': 2.0597147941589355}}
+[18:41:01] === fitting fold 3 (30 train / 10 val / 10 test subjects)
+[18:48:37] fold 3 done in 7.6 min (checkpoint saved)
+[18:48:37] fold 3 info: {'ridge_alpha': 10, 'kalman_q_r': (100, 0.001), 'latency_ms_per_window': {'lstm_prob': 0.31914234161376953, 'tcn_prob': 1.8454599380493164}}
+[18:48:37] === fitting fold 4 (30 train / 10 val / 10 test subjects)
+[18:57:32] fold 4 done in 8.9 min (checkpoint saved)
+[18:57:32] fold 4 info: {'ridge_alpha': 10, 'kalman_q_r': (100, 0.001), 'latency_ms_per_window': {'lstm_prob': 0.32439231872558594, 'tcn_prob': 1.8991303443908691}}
+[18:57:32] STATUS forecasting_models: RUN
+[18:58:01] STATUS forecast_evaluation: RUN
+[18:58:04] STATUS model_selection_validation: RUN
+[18:58:09] STATUS prediction_export_and_tests: RUN
+[18:58:16] STATUS uncertainty_calibration: RUN
+[18:58:19] STATUS distribution_shift: NOT RUN: only one evaluation group present ([np.str_('test')]); see held-out-subject results above
+[18:58:21] STATUS synthetic_target: RUN
+[18:58:22] STATUS robot_sinusoid_validation: RUN
+[18:59:07] STATUS controllers_primary: RUN
+[18:59:17] STATUS tracking_metrics: RUN
+[19:05:57] STATUS failure_prediction: RUN
+[19:06:26] STATUS failure_curves: RUN
+[19:06:35] STATUS statistics: RUN
+[19:09:16] STATUS sensitivity_plant: RUN
+[19:09:29] STATUS sensitivity_measurement_noise: RUN
+[19:09:29] STATUS ablation: RUN
+[19:09:35] STATUS figures_tables: RUN
+[19:09:36] STATUS final_report: RUN
