@@ -1,0 +1,21 @@
+record,subject,resp_idx,resp_name,reason,fs,sig_len,duration_s,n_sig,sig_names,units,comments,age,sex,location,group,resp_units,selected,start_s,dur_s
+infant10_ecg,infant10_ecg,,,channel: No respiratory channel matches /resp/ in ['I'],500.0,85083254,170166.508,1,I,mV,,,,,infant,,False,,
+infant10_resp,infant10_resp,0.0,RESP,,50.0,8508154,170163.08,1,RESP,NU,,,,,infant,NU,True,300.0,3600.0
+infant1_ecg,infant1_ecg,,,channel: No respiratory channel matches /resp/ in ['ECG'],250.0,41052191,164208.764,1,ECG,mV,,,,,infant,,False,,
+infant1_resp,infant1_resp,0.0,RESP,,500.0,82122000,164244.0,1,RESP,NU,,,,,infant,NU,True,300.0,3600.0
+infant2_ecg,infant2_ecg,,,channel: No respiratory channel matches /resp/ in ['II'],500.0,78916000,157832.0,1,II,mV,,,,,infant,,False,,
+infant2_resp,infant2_resp,0.0,RESP,,50.0,7891433,157828.66,1,RESP,NU,,,,,infant,NU,True,300.0,3600.0
+infant3_ecg,infant3_ecg,,,channel: No respiratory channel matches /resp/ in ['II'],500.0,78684614,157369.228,1,II,mV,,,,,infant,,False,,
+infant3_resp,infant3_resp,0.0,RESP,,50.0,7868296,157365.92,1,RESP,NU,,,,,infant,NU,True,300.0,3600.0
+infant4_ecg,infant4_ecg,,,channel: No respiratory channel matches /resp/ in ['II'],500.0,84208000,168416.0,1,II,mV,,,,,infant,,False,,
+infant4_resp,infant4_resp,0.0,RESP,,50.0,8420800,168416.0,1,RESP,NU,,,,,infant,NU,True,300.0,3600.0
+infant5_ecg,infant5_ecg,,,channel: No respiratory channel matches /resp/ in ['ECG'],250.0,43878723,175514.892,1,ECG,mV,,,,,infant,,False,,
+infant5_resp,infant5_resp,0.0,RESP,,50.0,8955598,179111.96,1,RESP,NU,,,,,infant,NU,True,300.0,3600.0
+infant6_ecg,infant6_ecg,,,channel: No respiratory channel matches /resp/ in ['II'],500.0,87492197,174984.394,1,II,mV,,,,,infant,,False,,
+infant6_resp,infant6_resp,0.0,RESP,,50.0,8749057,174981.14,1,RESP,NU,,,,,infant,NU,True,300.0,3600.0
+infant7_ecg,infant7_ecg,,,channel: No respiratory channel matches /resp/ in ['II'],500.0,36604500,73209.0,1,II,mV,,,,,infant,,False,,
+infant7_resp,infant7_resp,0.0,RESP,,50.0,3660288,73205.76,1,RESP,NU,,,,,infant,NU,True,300.0,3600.0
+infant8_ecg,infant8_ecg,,,channel: No respiratory channel matches /resp/ in ['II'],500.0,44288000,88576.0,1,II,mV,,,,,infant,,False,,
+infant8_resp,infant8_resp,0.0,RESP,,50.0,4428613,88572.26,1,RESP,NU,,,,,infant,NU,True,300.0,3600.0
+infant9_ecg,infant9_ecg,,,channel: No respiratory channel matches /resp/ in ['II'],500.0,126569088,253138.176,1,II,mV,,,,,infant,,False,,
+infant9_resp,infant9_resp,0.0,RESP,,50.0,12656784,253135.68,1,RESP,NU,,,,,infant,NU,True,300.0,3600.0

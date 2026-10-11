@@ -1,0 +1,223 @@
+{
+  "CFG_ALL": {
+    "MODE": "full",
+    "ON_KAGGLE": true,
+    "SEED": 42,
+    "RESULTS_BASE": "/kaggle/working/results/picsdb",
+    "DATA_DIR": "/kaggle/working/data/picsdb",
+    "RESUME_RUN": null,
+    "ALLOW_OVERWRITE": false,
+    "RUN_RECURSIVE_WGET": false,
+    "DL_WORKERS": 16,
+    "USE_CACHE": true,
+    "DATASET": "PICSDB",
+    "DB_URL": "https://physionet.org/files/picsdb/1.0.0/",
+    "DB_PAGE": "https://physionet.org/content/picsdb/1.0.0/",
+    "EXPECTED_N_RECORDS": null,
+    "RESP_REGEX": "resp",
+    "RESP_PREFERRED": "resp",
+    "FS_MODEL": 20,
+    "FILTER_ORDER": 4,
+    "BAND": [
+      0.1,
+      3.0
+    ],
+    "ALT_BANDS": [
+      [
+        0.1,
+        2.0
+      ],
+      [
+        0.2,
+        3.0
+      ],
+      [
+        0.1,
+        5.0
+      ]
+    ],
+    "MAX_GAP_S": 0.25,
+    "FLAT_S": 2.0,
+    "WARMUP_S": 10.0,
+    "CHUNK_S": 300,
+    "MIN_SEG_S": 60,
+    "MIN_VALID_FRAC": 0.7,
+    "HIST": 100,
+    "HORIZONS_STEPS": [
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "SIGMA_MIN": 0.001,
+    "LR": 0.003,
+    "WD": 1e-05,
+    "LAYERS": 1,
+    "BATCH": 1024,
+    "RIDGE_ALPHAS": [
+      0.001,
+      0.01,
+      0.1,
+      1,
+      10,
+      100,
+      1000
+    ],
+    "KF_Q": [
+      0.01,
+      0.1,
+      1,
+      10,
+      100
+    ],
+    "KF_R": [
+      0.001,
+      0.01,
+      0.1,
+      1
+    ],
+    "AMPLITUDE_MM": 5.0,
+    "AMPLITUDES_MM": [
+      2.0,
+      5.0,
+      10.0
+    ],
+    "TAU_ACT": 0.2,
+    "D_CMD": 0,
+    "UMAX_FACTOR": 6.0,
+    "TRANSIENT_S": 1.0,
+    "MIN_RUN": 100,
+    "DELAYS_STEPS": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      10
+    ],
+    "W_GRID": [
+      0.0,
+      0.1,
+      0.2,
+      0.30000000000000004,
+      0.4,
+      0.5,
+      0.6000000000000001,
+      0.7000000000000001,
+      0.8,
+      0.9,
+      1.0
+    ],
+    "C_GRID": [
+      0.25,
+      0.5,
+      1,
+      2,
+      4,
+      8
+    ],
+    "BOOT_SCORES": [
+      "sigma_total",
+      "abs_velocity",
+      "last_forecast_error"
+    ],
+    "EPS_FRAC": 0.2,
+    "EPS_SENS": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "FAIL_CTRLS": [
+      "predictive",
+      "reactive",
+      "uncertainty_aware"
+    ],
+    "MODE_SETTINGS": {
+      "smoke": {
+        "EPOCHS": 3,
+        "ENS_SIZE": 2,
+        "HIDDEN": 32,
+        "TCN_CH": 16,
+        "TRAIN_STRIDE": 8,
+        "N_BOOT": 100,
+        "N_BOOT_FAIL": 30,
+        "PATIENCE": 2,
+        "VAL_SUB": 4,
+        "FAIL_STRIDE": 8,
+        "MAX_INFANTS": 4,
+        "RECS_PER_INFANT": 1,
+        "START_MIN": 5,
+        "SEG_MIN": 10,
+        "N_FOLDS": 2
+      },
+      "fast": {
+        "EPOCHS": 12,
+        "ENS_SIZE": 3,
+        "HIDDEN": 48,
+        "TCN_CH": 24,
+        "TRAIN_STRIDE": 4,
+        "N_BOOT": 300,
+        "N_BOOT_FAIL": 100,
+        "PATIENCE": 3,
+        "VAL_SUB": 3,
+        "FAIL_STRIDE": 4,
+        "MAX_INFANTS": null,
+        "RECS_PER_INFANT": 1,
+        "START_MIN": 5,
+        "SEG_MIN": 20,
+        "N_FOLDS": 3
+      },
+      "full": {
+        "EPOCHS": 30,
+        "ENS_SIZE": 5,
+        "HIDDEN": 64,
+        "TCN_CH": 32,
+        "TRAIN_STRIDE": 4,
+        "N_BOOT": 1000,
+        "N_BOOT_FAIL": 200,
+        "PATIENCE": 4,
+        "VAL_SUB": 2,
+        "FAIL_STRIDE": 2,
+        "MAX_INFANTS": null,
+        "RECS_PER_INFANT": null,
+        "START_MIN": 5,
+        "SEG_MIN": 60,
+        "N_FOLDS": null
+      }
+    },
+    "EPOCHS": 30,
+    "ENS_SIZE": 5,
+    "HIDDEN": 64,
+    "TCN_CH": 32,
+    "TRAIN_STRIDE": 4,
+    "N_BOOT": 1000,
+    "N_BOOT_FAIL": 200,
+    "PATIENCE": 4,
+    "VAL_SUB": 2,
+    "FAIL_STRIDE": 2,
+    "MAX_INFANTS": null,
+    "RECS_PER_INFANT": null,
+    "START_MIN": 5,
+    "SEG_MIN": 60,
+    "N_FOLDS": null
+  },
+  "ENV": {
+    "python": "3.13.15",
+    "platform": "Linux-6.18.48+-x86_64-with-glibc2.39",
+    "numpy": "2.1.3",
+    "pandas": "2.3.3",
+    "scipy": "1.16.3",
+    "sklearn": "1.6.1",
+    "statsmodels": "0.15.0",
+    "wfdb": "4.3.1",
+    "torch": "2.11.0+cu128",
+    "matplotlib": "3.10.0",
+    "device": "cuda",
+    "cuda_available": true,
+    "ram_total_gb": 31.35,
+    "ram_available_gb": 29.71,
+    "seed": 42,
+    "mode": "full"
+  }
+}

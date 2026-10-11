@@ -1,0 +1,16 @@
+{
+  "source": "https://physionet.org/files/picsdb/1.0.0/",
+  "files": {
+    "infant10_resp.dat": "OK",
+    "infant1_resp.dat": "OK",
+    "infant2_resp.dat": "OK",
+    "infant3_resp.dat": "OK",
+    "infant4_resp.dat": "OK",
+    "infant5_resp.dat": "OK",
+    "infant6_resp.dat": "OK",
+    "infant7_resp.dat": "OK",
+    "infant8_resp.dat": "OK",
+    "infant9_resp.dat": "OK"
+  },
+  "synthetic_data_used": false
+}

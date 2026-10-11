@@ -1,0 +1,17 @@
+| experiment | status |
+|---|---|
+| dataset_inventory | RUN |
+| unit_tests_preprocessing | RUN |
+| forecasting_models | RUN |
+| forecast_evaluation | RUN |
+| uncertainty_calibration | RUN |
+| distribution_shift | NOT RUN: only one evaluation group present ([np.str_('held_out_infant')]); see held-out-subject results above |
+| synthetic_target | RUN |
+| robot_sinusoid_validation | RUN |
+| controllers_primary | RUN |
+| tracking_metrics | RUN |
+| failure_prediction | RUN |
+| failure_curves | RUN |
+| statistics | RUN |
+| ablation | RUN |
+| figures_tables | RUN |

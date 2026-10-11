@@ -1,0 +1,46 @@
+[17:23:01] Output directory: /kaggle/working/results/picsdb/full_20261010_172301
+[17:23:01] Database root: /kaggle/working/data/picsdb; records discovered in official RECORDS: 20
+[17:23:03] Documentation file README not available (Download failed: https://physionet.org/files/picsdb/1.0.0/README (404 Client Err...)
+[17:23:06] Documentation file README.md not available (Download failed: https://physionet.org/files/picsdb/1.0.0/README.md (404 Client ...)
+[17:23:09] Documentation file README.txt not available (Download failed: https://physionet.org/files/picsdb/1.0.0/README.txt (404 Client...)
+[17:23:09] Fetched documentation file: SHA256SUMS.txt
+[17:23:11] Documentation file LICENSE.txt not available (Download failed: https://physionet.org/files/picsdb/1.0.0/LICENSE.txt (404 Clien...)
+[17:25:29] Records with verified respiratory channel: 10/20
+[17:25:29] Selected 10 records for this run (MODE=full); excluded-by-configuration: 10
+[18:00:56] checksum results: {'OK': 10}
+[18:00:56] STATUS dataset_inventory: RUN
+[18:00:57] Records analysed: 9; subjects: 9
+[18:01:02] STATUS unit_tests_preprocessing: RUN
+[18:01:05] Window metadata sample (every 50th window; horizons are the fixed list H_MS) saved.
+[18:01:05] === fitting fold 0 (7 train / 1 val / 1 test subjects)
+[18:06:35] fold 0 info: {'ridge_alpha': 100, 'kalman_q_r': (100, 0.001), 'latency_ms_per_window': {'lstm_prob': 0.3017306327819824, 'tcn_prob': 1.8160271644592285}}
+[18:06:36] === fitting fold 1 (7 train / 1 val / 1 test subjects)
+[18:17:49] fold 1 info: {'ridge_alpha': 0.001, 'kalman_q_r': (0.01, 1), 'latency_ms_per_window': {'lstm_prob': 0.3361701965332031, 'tcn_prob': 1.7757511138916016}}
+[18:17:49] === fitting fold 2 (7 train / 1 val / 1 test subjects)
+[18:28:59] fold 2 info: {'ridge_alpha': 0.001, 'kalman_q_r': (0.01, 1), 'latency_ms_per_window': {'lstm_prob': 0.30550241470336914, 'tcn_prob': 1.756739616394043}}
+[18:29:00] === fitting fold 3 (7 train / 1 val / 1 test subjects)
+[18:40:23] fold 3 info: {'ridge_alpha': 0.001, 'kalman_q_r': (0.01, 1), 'latency_ms_per_window': {'lstm_prob': 0.30107975006103516, 'tcn_prob': 1.7783141136169434}}
+[18:40:23] === fitting fold 4 (7 train / 1 val / 1 test subjects)
+[18:51:34] fold 4 info: {'ridge_alpha': 0.001, 'kalman_q_r': (0.01, 1), 'latency_ms_per_window': {'lstm_prob': 0.303499698638916, 'tcn_prob': 1.784658432006836}}
+[18:51:35] === fitting fold 5 (7 train / 1 val / 1 test subjects)
+[19:02:16] fold 5 info: {'ridge_alpha': 0.001, 'kalman_q_r': (0.01, 1), 'latency_ms_per_window': {'lstm_prob': 0.31406641006469727, 'tcn_prob': 2.060105800628662}}
+[19:02:16] === fitting fold 6 (7 train / 1 val / 1 test subjects)
+[19:12:59] fold 6 info: {'ridge_alpha': 0.001, 'kalman_q_r': (0.01, 1), 'latency_ms_per_window': {'lstm_prob': 0.3140401840209961, 'tcn_prob': 1.7700505256652832}}
+[19:12:59] === fitting fold 7 (7 train / 1 val / 1 test subjects)
+[19:19:21] fold 7 info: {'ridge_alpha': 0.01, 'kalman_q_r': (100, 0.001), 'latency_ms_per_window': {'lstm_prob': 0.3293490409851074, 'tcn_prob': 1.8407702445983887}}
+[19:19:21] === fitting fold 8 (7 train / 1 val / 1 test subjects)
+[19:25:18] fold 8 info: {'ridge_alpha': 0.001, 'kalman_q_r': (0.01, 1), 'latency_ms_per_window': {'lstm_prob': 0.31710386276245117, 'tcn_prob': 1.8163156509399414}}
+[19:25:19] STATUS forecasting_models: RUN
+[19:25:47] STATUS forecast_evaluation: RUN
+[19:25:55] STATUS uncertainty_calibration: RUN
+[19:25:57] STATUS distribution_shift: NOT RUN: only one evaluation group present ([np.str_('held_out_infant')]); see held-out-subject results above
+[19:25:59] STATUS synthetic_target: RUN
+[19:26:00] STATUS robot_sinusoid_validation: RUN
+[19:26:18] STATUS controllers_primary: RUN
+[19:26:25] STATUS tracking_metrics: RUN
+[19:46:58] STATUS failure_prediction: RUN
+[19:47:17] STATUS failure_curves: RUN
+[19:47:22] STATUS statistics: RUN
+[19:48:26] STATUS ablation: RUN
+[19:48:33] STATUS figures_tables: RUN
+[19:48:35] STATUS final_report: RUN
